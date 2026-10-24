@@ -1,0 +1,9 @@
+#!/command/with-contenv sh
+# shellcheck shell=sh
+# Nokker /healthz aggregator service (Nokker fork — not upstream
+# Hermes; see docker/nokker/healthz_server.py for the rationale). Runs
+# unprivileged, stdlib-only, no venv dependency, always-on (unlike
+# dashboard/run it has no opt-out: the brief's /healthz contract must
+# always answer once the container is up).
+export HOME=/opt/data
+exec s6-setuidgid hermes python3 /opt/hermes/docker/nokker/healthz_server.py
