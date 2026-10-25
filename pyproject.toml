@@ -14,8 +14,8 @@ readme = "README.md"
 # See tests/compat/README.md for the updater contract this keeps.
 requires-python = ">=3.11,<3.15"
 authors = [{ name = "Nous Research" }]
-license = "MIT"
-license-files = ["LICENSE"]
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "LICENSES/*"]
 dependencies = [
   # Core — every direct dep is exact-pinned to ==X.Y.Z (no ranges).
   # Rationale: ranges allow PyPI to ship a fresh version of a transitive

@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/NousResearch/Hermes-Agent.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/NousResearch/Hermes-Agent/issues"
   },
